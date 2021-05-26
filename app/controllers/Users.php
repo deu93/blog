@@ -144,6 +144,7 @@ class Users extends Controller
                     $data['passwordError'] = 'Password or username is incorrect. Please try again.';
                 }
                 $this->view('users/login', $data);
+
             }
         } else {
             $data = [
@@ -162,6 +163,7 @@ class Users extends Controller
         $_SESSION['user_id'] = $user->id;
         $_SESSION['username'] = $user->username;
         $_SESSION['email'] = $user->email;
+        header('location:' . URLROOT . '/index');
     }
 
     public function logout()

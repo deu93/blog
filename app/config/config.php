@@ -9,7 +9,7 @@
     define('APPROOT',dirname(dirname(__FILE__)));
 
     // URLROOT (Dynamic links)
-    define('URLROOT', 'stt.com.jq');
+    define('URLROOT', 'http://stt.com.jq');
 
     // Sitename
     define('SITENAME', 'BLOG');
